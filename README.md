@@ -1,5 +1,5 @@
 <h1 align='center' style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;">
-Hearing Between the Lines: Unlocking the Reasoning Power of LLMs for <br>Speech Evaluation
+Hearing Between the Lines: Unlocking the Reasoning Power of LLMs for Speech Evaluation
 </h1>
 
 <p align='center' style="text-align:center;font-size:1.25em;">
