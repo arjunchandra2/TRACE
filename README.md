@@ -63,9 +63,9 @@ S2S-Arena was introduced in this [paper](https://arxiv.org/abs/2503.05085). The 
 
 
 
-
-
 ## Usage
+
+Our implementation of TRACE supports any model that can be accessed via the [OpenAI Python API](https://developers.openai.com/api/docs/libraries?language=python) or [Google GenAI Python SDK](https://ai.google.dev/gemini-api/docs/libraries). The prompts and fusion rules are designed for SpeakBench and S2S-Arena but can easily be modified in `prompts.py` and `fusion.py`, respectively. 
 
 ### Quick Start
 ```python
