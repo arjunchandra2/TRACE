@@ -32,8 +32,38 @@ We propose TRACE (Textual Reasoning over Audio Cues for Evaluation), a novel fra
 </p>
 
 
-## Data
-**Data coming soon!*
+## Dataset
+Our Human Chain-of-Thought (HCoT) annotations for SpeakBench and the English subset of S2S-Arena can be found in the `data` directory. Here is a sample entry from SpeakBench: 
+
+```json
+{
+    "index": 0,
+    "instruction_path": "audio_data/speakbench508_audio/0/instruction.wav",
+    "instruction_text": "Pronounce the word 'potato' in a slow, low tone and gradually raise the pitch until it sounds high and squeaky.",
+    "model_a": "moshi",
+    "model_b": "diva+tts",
+    "audio1_path": "audio_data/speakbench508_audio/0/audio_a.wav",
+    "audio2_path": "audio_data/speakbench508_audio/0/audio_b.wav",
+    "label": {
+      "content": "both_bad",
+      "voice_quality": "2",
+      "paralinguistics": "both_bad",
+      "overall": "both_bad"
+    },
+    "instruction_id": 67
+  }
+```
+Full instructions to obtain the original datasets and their associated audio files are provided below.
+
+### SpeakBench
+SpeakBench was introduced in this [paper](https://arxiv.org/abs/2507.12705). The dataset can be downloaded directly from Hugging Face [here](https://huggingface.co/datasets/potsawee/speakbench-v1-labelled-508). However, to ensure the same preprocessing, we recommend using the original paper's [codebase](https://github.com/Woodygan/AudioJudge/tree/main) and downloading the dataset from `AudioJudge/experiments/main_experiments/prepare_dataset.py`. 
+
+### S2S-Arena
+S2S-Arena was introduced in this [paper](https://arxiv.org/abs/2503.05085). The dataset can be downloaded directly from Hugging Face, with the input audios found [here](https://huggingface.co/datasets/FreedomIntelligence/S2S-Arena) and the response audios found [here](https://huggingface.co/datasets/FreedomIntelligence/S2S-Arena-output). 
+
+
+
+
 
 ## Usage
 
